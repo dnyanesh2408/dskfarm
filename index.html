@@ -15,6 +15,9 @@
 
 </head>
 <body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <!-- Navbar -->
     <nav class="navbar fixed-top shadow-sm">
         <div class="container-fluid">
@@ -49,8 +52,37 @@
                 <h2>Our commitment to provide best renting services for the farming.</h2>
                 </div>
 
-                <div class="text-center">
+                <!-- <div class="text-center">
                     <img class="img-fluid rounded-4" src="./img/farm_2.jpg" height="auto" width="800" alt="img_farm_2">
+                </div> -->
+
+
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner rounded-5">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <img src="./img/img_1.jpg" class="d-block w-100" height="450" width="auto" alt="img_1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="./img/img_2.jpg" class="d-block w-100" height="450" width="auto" alt="img_2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/img_3.jpg" class="d-block w-100" height="450" width="auto"alt="img_3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/img_4.jpg" class="d-block w-100" height="450" width="auto"alt="img_4">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./img/img_5.jpg" class="d-block w-100" height="450" width="auto"alt="img_5">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
 
             </div>
@@ -74,6 +106,9 @@
             <div class="col-sm">
                 <h4 class="text-center">We take cares of soil. We values soil.</h4>
             </div>
+            <div>
+                We are providing tractors and its farm implements on a rent service for the farming purposes. We have been in this business for the last 12 years. We are committed to provide best in class services to the farming and farmers at affordable prices.
+            </div>
         </div>
         </div>
     </div>
@@ -85,16 +120,24 @@
       <div class="row">
         <div class="col" data-aos="fade-up"
         data-aos-anchor-placement="top-bottom">
-          <h1 class="text-center"><span class="title-underline">We Offers</span></h1>
+          <h1 class="text-center"><span class="title-underline">What We Offers</span></h1>
         </div>
       </div>
 
-        <div class="col-sm about_content text-start" data-aos="fade-up"
+        <div class="col-sm  services_content text-start" data-aos="fade-up"
         data-aos-anchor-placement="top-bottom">
         <div class="row">
             <div class="col-sm">
-                <h4 class="text-center">Who We Are !</h4>
-                <p class="text-center">We take cares of soil. We values soil.</p>
+                <h6>We offer following farm implements on rent services with tractors.</h6>
+                <div class="card shadow-sm">
+                  <div class="card-body">
+                    <p>1. Cultivator</p>
+                    <p>2. Rotavator/Rotary Tiller</p>
+                    <p>3. Plough</p>
+                    <p>4. Trailor</p>
+                    <p>5. Seed Drill (Wheat, Peanuts, Cicers, Pigeon Peas)</p>
+                  </div>
+                </div>
             </div>
         </div>
         </div>
@@ -115,8 +158,8 @@
         data-aos-anchor-placement="top-bottom">
         <div class="row">
             <div class="col-sm">
-                <p>Eamil Us : dskfarm@gmail.com</p>
-                <p>We are here : Anjangaon, Maharashtra, 444705, IN.</p>
+                <p>Eamil Us : <span class="mail_to"><a href="mailto:dskfarm@gmail.com">dskfarm@gmail.com</a></span></p>
+                <p>Address : Anjangaon, Maharashtra, 444705, IN.</p>
             </div>
         </div>
         </div>
@@ -126,8 +169,8 @@
 <footer>
     <div class="footer">
         <p class="copy text-center">DSK Farm &copy; 2022.</p>
-        <p class="text-center">Design & Developed By <span class="credit"><a href="https://dnyaneshkolhe.in/">Dnyanesh Kolhe.</a></span></p>
-        <p class="text-center india">Made in <i class="bi bi-heart-fill"></i> with India.</p>
+        <p class="text-center">Design & Developed By <span class="credit"><a href="https://dnyaneshkolhe.in/">Dnyanesh Kolhe</a></span></p>
+        <p class="text-center india">Made in <i class="bi bi-heart-fill"></i> with India</p>
     </div>
 </footer>
 
@@ -140,6 +183,30 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- Top Button> -->
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+    <!-- Top Button End -->
 
 </body>
 </html>
