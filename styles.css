@@ -67,7 +67,8 @@ section{
     width: 60%;
 }
 .navbar{
-    background-color: rgb(31, 28, 44);
+    background-color: rgba(31, 28, 44, 0.984);
+    backdrop-filter: 4%;
 }
 .nav-link{
     font-family: 'Nunito Sans', sans-serif;
@@ -248,5 +249,8 @@ section{
 @media(max-width:576px) {
     #container-width{
         width: 95%;
+    }
+    .logo{
+        margin-left: 50%;
     }
 }
