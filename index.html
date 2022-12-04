@@ -16,13 +16,13 @@
 </head>
 <body>
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up"></i></button>
 
     <!-- Navbar -->
     <nav class="navbar fixed-top shadow-sm">
         <div class="container-fluid">
           <a class="navbar-brand" href="http://dnyaneshkolhe.in/p5">
-            <img src="./img/logo.png" alt="logo" width="90" height="auto">
+            <img class="rounded-2" src="./img/logo.webp" alt="img_logo_2" width="80" height="40">
           </a>
         <ul class="nav">
             <li class="nav-item">
@@ -59,21 +59,20 @@
 
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner rounded-5">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                      <img src="./img/img_1.jpg" class="d-block w-100" height="450" width="auto" alt="img_1">
+                    <!-- <div class="carousel-item active" data-bs-interval="10000">
+                      <img src="./img/img_1.webp" class="d-block w-100" height="450" width="auto" alt="img_1">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                      <img src="./img/img_2.jpg" class="d-block w-100" height="450" width="auto" alt="img_2">
+                      <img src="./img/img_2.webp" class="d-block w-100" height="450" width="auto" alt="img_2">
+                    </div> -->
+
+                    <div class="carousel-item active" data-bs-interval="5000">
+                      <img src="./img/img_1.webp" class="d-block w-100" height="450" width="auto" alt="img_1">
                     </div>
-                    <div class="carousel-item">
-                      <img src="./img/img_3.jpg" class="d-block w-100" height="450" width="auto"alt="img_3">
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img src="./img/img_2.webp" class="d-block w-100" height="450" width="auto" alt="img_2">
                     </div>
-                    <div class="carousel-item">
-                      <img src="./img/img_4.jpg" class="d-block w-100" height="450" width="auto"alt="img_4">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./img/img_5.jpg" class="d-block w-100" height="450" width="auto"alt="img_5">
-                    </div>
+
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -128,15 +127,62 @@
         data-aos-anchor-placement="top-bottom">
         <div class="row">
             <div class="col-sm">
-                <h6>We offer following farm implements on rent services with tractors.</h6>
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <p>1. Cultivator</p>
-                    <p>2. Rotavator/Rotary Tiller</p>
-                    <p>3. Plough</p>
-                    <p>4. Trailor</p>
-                    <p>5. Seed Drill (Wheat, Peanuts, Cicers, Pigeon Peas)</p>
-                  </div>
+                <h5>We offer following farm implements on rent services with tractors.</h5>
+                <div>
+                  <p>
+                    <li>Cultivator</li>
+                    <li>Rotavator/Rotary Tiller</li>
+                    <li>Plough</li>
+                    <li>Trailor</li>
+                    <li>Seed Drill (Wheat, Peanuts, Cicers, <span class="seed_info">Pigeon Peas)</span> </li>
+                  </p>
+                </div>
+                <div>
+                  <h5>Order Rental Services Today</h5>
+
+                  <form class="align-items-center" action="https://formspree.io/f/xqkjrzba" method="POST">
+
+                    <div class="row mb-3">
+                      <div class="col-sm-5">
+                      <label class="visually-hidden" for="name-input">Name</label>
+                      <input type="text" name="name" class="form-control" placeholder="Your Name.." required>
+                    </div>
+                    </div>
+
+                    <div class="row mb-3">
+                    <div class="col-sm-5">
+                      <label class="visually-hidden" for="contact-input">Contact No.</label>
+                      <input type="text" name="name" class="form-control" placeholder= "+91 Your Contact No." required>
+                    </div>
+                    </div>
+
+                    <div class="row mb-3">
+                    <div class="col-sm-5">
+                      <label class="visually-hidden" for="option-selection">Preference</label>
+                      <select type="select" name="select" class="form-select" required>
+                        <option selected>Choose...</option>
+                        <option value="1. Cultivator">Cultivator</option>
+                        <option value="2. Rotavator/Rotary Tiller">Rotavator/Rotary Tiller</option>
+                        <option value="3. Plough">Plough</option>
+                        <option value="4. Trailor">Trailor</option>
+                        <Option value="5. Seed Drill">Seed Drill</Option>
+                      </select>
+                    </div>
+                    </div>
+
+                    <div class="row mb-3">
+                    <div class="col-sm-5">
+                      <label class="visually-hidden" for="text-area-input">Contact No.</label>
+                      <textarea type="text" name="text" class="form-control" id="autoSizingInput" placeholder="Write message here.."></textarea>
+                    </div>
+                    </div>
+                
+                    <div class="col-sm">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+
+
                 </div>
             </div>
         </div>
@@ -169,7 +215,7 @@
 <footer>
     <div class="footer">
         <p class="copy text-center">DSK Farm &copy; 2022.</p>
-        <p class="text-center">Design & Developed By <span class="credit"><a href="https://dnyaneshkolhe.in/">Dnyanesh Kolhe</a></span></p>
+        <p class="text-center">Design & Developed By <span class="credit"><strong><a href="https://dnyaneshkolhe.in/">Dnyanesh Kolhe</a></strong></span></p>
         <p class="text-center india">Made in <i class="bi bi-heart-fill"></i> with India</p>
     </div>
 </footer>
