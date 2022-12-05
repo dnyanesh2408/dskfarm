@@ -169,10 +169,12 @@ section{
     background-color: #000000;
     border-radius: 40px;
     margin-top: 4px;
+    border: 0.2px solid #000000d7;
 }
 .btn-primary:hover{
     color: var(--bs-indigo);
     background-color: var(--bs-light);
+    border: 0.2px solid #000000d7;
 }
 /* Contact */
 #contact{
