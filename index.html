@@ -139,32 +139,43 @@
                     <li>Rotavator/Rotary Tiller</li>
                     <li>Plough</li>
                     <li>Trailor</li>
-                    <li>Seed Drill (Wheat, Peanuts, Cicers, <span class="seed_info">Pigeon Peas)</span> </li>
+                    <li>Seed Drill</li>
+                    <span><em class="seed_drill_info">(Seed Drill available for Wheat, <span>Peanuts, Cicers, Pigeon Peas).</span></em></span>
                   </p>
                 </div>
                 <div>
-                  <h5>Order Rental Services Today :</h5>
+                  <h6 class="order_title"><span>Order rental services today</span> :</h6>
 
                   <form class="align-items-center" action="https://formspree.io/f/xqkjrzba" method="POST">
 
                     <div class="row mb-3">
                       <div class="col-sm-5">
                       <label class="visually-hidden" for="name-input">Name</label>
-                      <input type="text" name="name" class="form-control" placeholder="Your Name.." required>
+                      <input type="text" name="Name" class="form-control" placeholder="Your Name.." required>
                     </div>
                     </div>
 
-                    <div class="row mb-3">
+                    <!-- <div class="row mb-3">
                     <div class="col-sm-5">
                       <label class="visually-hidden" for="contact-input">Contact No.</label>
-                      <input type="text" name="name" class="form-control" placeholder= "+91 Your Contact No." required>
+                      <input type="number" name="Contact Number" class="form-control" placeholder="Your Contact No." required>
                     </div>
+                    </div> -->
+
+                    <div class="row mb-3">
+                      <div class="col-sm-5">
+                        <div class="input-group has-validation">
+                          <label class="visually-hidden" for="contact-input">Contact No.</label>
+                          <span class="input-group-text" id="inputGroupPrepend">+91</span>
+                          <input type="number" name="Contact Number" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Your Contact Number" required>
+                        </div>
+                      </div>
                     </div>
 
                     <div class="row mb-3">
                     <div class="col-sm-5">
                       <label class="visually-hidden" for="option-selection">Preference</label>
-                      <select type="select" name="select" class="form-select" required>
+                      <select type="select" name="Rental Service Name" class="form-select" required>
                         <option selected>Choose...</option>
                         <option value="1. Cultivator">Cultivator</option>
                         <option value="2. Rotavator/Rotary Tiller">Rotavator/Rotary Tiller</option>
@@ -176,12 +187,19 @@
                     </div>
 
                     <div class="row mb-3">
+                      <div class="col-sm-5">
+                        <label class="visually-hidden" for="text-area-input">Date</label>
+                        <input type="date" name="Date" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
                     <div class="col-sm-5">
-                      <label class="visually-hidden" for="text-area-input">Contact No.</label>
+                      <label class="visually-hidden" for="text-area-input">Message</label>
                       <textarea type="text" name="text" class="form-control" id="autoSizingInput" placeholder="Write message here.."></textarea>
                     </div>
                     </div>
-                
+
                     <div class="col-sm">
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
