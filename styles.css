@@ -160,6 +160,15 @@ section{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+span .seed_drill_info{
+    margin-left: 1.2rem;
+}
+.order_title{
+    padding-bottom: 8px;
+}
+.order_title span{
+    border-bottom: 0.5px solid var(--bs-gray);
+}
 .col-sm{
     margin-top: 8px;
     margin-bottom: 8px;
