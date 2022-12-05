@@ -17,7 +17,8 @@ body, html{
     background-color: #261b2be1;
     margin: 0;
     padding: 0;
-    line-height: 1.2;
+    /* line-height: 1.2; */
+    line-height: 1.5;
     width: 100%;
 }
 :root {
@@ -50,6 +51,7 @@ body, html{
     --border-radius: 10px;
     /* --light-navy: #1b1e30; */
     --light-navy: #ffffff;
+    --fz-lg: 18px;
 }
 a {
     text-decoration: none;
@@ -98,9 +100,6 @@ section{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
     margin-bottom: 2rem;
-}
-.carousel-inner{
-    opacity: 8;
 }
 /* About */
 #about{
@@ -185,6 +184,11 @@ span .seed_drill_info{
     background-color: var(--bs-light);
     border: 0.2px solid #000000d7;
 }
+.note{
+    padding-top: 0.8rem;
+    font-family: var(--bs-font-monospace);
+    font-size: small;
+}
 /* Contact */
 #contact{
     background-color: var(--bs-light);
@@ -211,18 +215,23 @@ span .seed_drill_info{
     font-weight: bold;
     color: var(--bs-white);
 }
-.credit a{
+.credit{
+    font-size: small;
+}
+#credit a{
     color: var(--bs-teal);
 }
-.credit a:hover{
+#credit a:hover{
     color: var(--bs-success);
 }
 .india{
     font-weight: 300;
-    font-size: small;
+    /* font-size: small; */
+    font-size: x-small;
 }
 .bi-heart-fill{
-    color: var(--bs-orange);
+    color: rgba(189, 65, 3, 0.888);
+    font-size: xx-small;
 }
 /* Back to Top */
 #myBtn{
@@ -241,8 +250,8 @@ span .seed_drill_info{
     /* padding: 15px; */
     padding-top: 9px;
     padding-bottom: 9px;
-    padding-left: 4.5px;
-    padding-right: 4.5px;
+    padding-left: 5.5px;
+    padding-right: 5.5px;
     border-radius: 4px;
     font-size: 14px;
 }
