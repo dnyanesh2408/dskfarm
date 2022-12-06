@@ -202,6 +202,19 @@ span .seed_drill_info{
     border-bottom: 1px solid var(--bs-gray-dark);
     transition: all 0.5sec ease-in-out;
 }
+/* Privacy Policy */
+#privacy_policy{
+    margin-left: 1rem;
+}
+.privacy_policy_title{
+    font-size: small;
+}
+.privacy_policy_info{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 /* Footer */
 .footer{
     font-family: 'Nunito Sans', sans-serif;
@@ -269,5 +282,8 @@ span .seed_drill_info{
 @media(max-width:576px) {
     #container-width{
         width: 95%;
+    }
+    .privacy_policy_title{
+        font-size: x-small;
     }
 }
