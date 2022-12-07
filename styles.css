@@ -159,8 +159,8 @@ section{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-span .seed_drill_info{
-    margin-left: 1.2rem;
+.seed_drill_info{
+    margin-left: 1.5rem;
 }
 .order_title{
     padding-bottom: 8px;
@@ -210,8 +210,8 @@ span .seed_drill_info{
     font-size: small;
 }
 .privacy_policy_info{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
